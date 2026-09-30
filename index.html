@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Folder Locker for Mac – Free App to Hide &amp; Encrypt Private Files | Sanrovix Tech</title>
+  <meta name="description"
+    content="Folder Lock is a free Mac app that hides and protects private files and folders. Instant Quick hide or AES-256 encryption, password protected, works offline. For Apple Silicon and Intel Macs.">
+  <meta name="keywords"
+    content="folder lock for mac, hide files on mac, lock folder mac, encrypt files macbook, password protect folder mac, private vault mac, Sanrovix Tech">
+  <link rel="canonical" href="https://shop.sanjaysudhakaran.in/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="Sanrovix Tech">
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="India">
+  <meta http-equiv="content-language" content="en-IN">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="og-image.png">
+  <meta name="theme-color" content="#07080f">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sanrovix Tech">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Folder Lock for Mac – Free App to Hide &amp; Encrypt Private Files">
+  <meta property="og:description"
+    content="Instant Quick hide or AES-256 encryption for your Mac. Apple Silicon and Intel.">
+  <meta property="og:url" content="https://shop.sanjaysudhakaran.in/">
+  <meta property="og:image" content="https://shop.sanjaysudhakaran.in/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Folder Lock for Mac">
+  <meta name="twitter:description" content="Keep private files private on your Mac.">
+  <meta name="twitter:image" content="https://shop.sanjaysudhakaran.in/og-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://shop.sanjaysudhakaran.in/#org","name":"Sanrovix Tech","url":"https://shop.sanjaysudhakaran.in/","logo":"https://shop.sanjaysudhakaran.in/assets/logo.svg"},
+{"@type":"SoftwareApplication","name":"Folder Locker for Mac","operatingSystem":"macOS","applicationCategory":"SecurityApplication","description":"Hides and protects private files and folders on Mac with instant Quick hide or AES-256 encryption, behind a password.","publisher":{"@id":"https://shop.sanjaysudhakaran.in/#org"},"image":"https://shop.sanjaysudhakaran.in/og-image.png","offers":{"@type":"Offer","price":"0","priceCurrency":"INR","availability":"https://schema.org/InStock"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is Folder Locker free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Folder Locker is free to download and use, with no account needed. If it helps you, you can optionally support the developer with a coffee via UPI."}},
+{"@type":"Question","name":"Is Quick hide encrypted?","acceptedAnswer":{"@type":"Answer","text":"No. Quick hide moves files out of sight instantly, whatever their size, behind an app password. Use Encrypt (AES-256) for sensitive files."}},
+{"@type":"Question","name":"Which version do I need, Apple Silicon or Intel?","acceptedAnswer":{"@type":"Answer","text":"Open the Apple menu and choose About This Mac. If it shows a Chip named Apple M1, M2, M3, M4 or M5, choose Apple Silicon. If it shows an Intel processor, choose Intel."}},
+{"@type":"Question","name":"What is the first password?","acceptedAnswer":{"@type":"Answer","text":"The first password is 123. Open the app and use Change password straight away."}},
+{"@type":"Question","name":"Why does macOS say it cannot verify the developer?","acceptedAnswer":{"@type":"Answer","text":"The app is not signed with a paid Apple certificate. Open System Settings, Privacy and Security, and click Open Anyway. You only do this once."}}]}]}
+</script>
+  <style>
+    :root {
+      --bg: #07080f;
+      --card: #0d0f1f;
+      --line: rgba(255, 255, 255, .09);
+      --text: #eef0ff;
+      --dim: #9aa0c3;
+      --v: #8b5cf6;
+      --i: #6366f1;
+      --c: #22d3ee;
+      --g: linear-gradient(135deg, #8b5cf6, #6366f1 50%, #22d3ee)
+    }
+
+    [hidden] {
+      display: none !important
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 92px
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 400 17px/1.7 Inter, system-ui, sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased
+    }
+
+    body:before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: radial-gradient(900px 500px at 15% -5%, rgba(139, 92, 246, .16), transparent), radial-gradient(800px 500px at 90% 30%, rgba(34, 211, 238, .08), transparent)
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Space Grotesk", Inter, sans-serif;
+      line-height: 1.1;
+      margin: 0 0 .5em;
+      letter-spacing: -.025em
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.2vw, 3.5rem)
+    }
+
+    h2 {
+      font-size: clamp(1.7rem, 3vw, 2.6rem)
+    }
+
+    h3 {
+      font-size: 1.3rem
+    }
+
+    .gt {
+      background: var(--g);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+
+    a {
+      color: var(--c)
+    }
+
+    .w {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 0 40px
+    }
+
+    header.top {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 8, 15, .72);
+      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+      padding-top: env(safe-area-inset-top)
+    }
+
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px
+    }
+
+    .logo {
+      width: 175px;
+      height: 34px;
+      display: block
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 34px
+    }
+
+    .links a {
+      color: var(--dim);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: .98rem
+    }
+
+    .links a:hover {
+      color: var(--text)
+    }
+
+    .burger {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .04);
+      cursor: pointer;
+      padding: 0;
+      position: relative
+    }
+
+    .burger span {
+      position: absolute;
+      left: 13px;
+      right: 13px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: .25s
+    }
+
+    .burger span:nth-child(1) {
+      top: 16px
+    }
+
+    .burger span:nth-child(2) {
+      top: 22px
+    }
+
+    .burger span:nth-child(3) {
+      top: 28px
+    }
+
+    .open .burger span:nth-child(1) {
+      top: 22px;
+      transform: rotate(45deg)
+    }
+
+    .open .burger span:nth-child(2) {
+      opacity: 0
+    }
+
+    .open .burger span:nth-child(3) {
+      top: 22px;
+      transform: rotate(-45deg)
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--g);
+      color: #fff !important;
+      border: 0;
+      border-radius: 14px;
+      padding: 12px 24px;
+      font: 600 .9rem Inter, sans-serif;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 12px 32px -12px #6366f1, inset 0 1px 0 rgba(255, 255, 255, .25);
+      transition: .2s;
+      white-space: nowrap
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.1)
+    }
+
+    .btn.o {
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid var(--line);
+      box-shadow: none
+    }
+
+    .btn.sm {
+      padding: 10px 18px;
+      font-size: .86rem
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 90px;
+      align-items: center;
+      padding: 84px 0
+    }
+
+    .row.rev .media {
+      order: 2
+    }
+
+    .media {
+      border-radius: 30px;
+      border: 1px solid var(--line);
+      background: linear-gradient(160deg, #151837, #090a15);
+      overflow: hidden;
+      box-shadow: 0 50px 90px -50px rgba(99, 102, 241, .6)
+    }
+
+    .media img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/3;
+      display: block
+    }
+
+    .tag {
+      color: var(--c);
+      font-weight: 600;
+      font-size: .82rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 14px
+    }
+
+    .t p {
+      color: var(--dim);
+      font-size: 1.1rem;
+      max-width: 560px
+    }
+
+    .t ul {
+      color: var(--dim);
+      padding: 0;
+      list-style: none
+    }
+
+    .t li {
+      padding-left: 28px;
+      position: relative;
+      margin: 10px 0
+    }
+
+    .t li:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .62em;
+      width: 14px;
+      height: 8px;
+      border-left: 2px solid var(--c);
+      border-bottom: 2px solid var(--c);
+      transform: rotate(-45deg) translateY(-30%)
+    }
+
+    .hero.row {
+      padding-top: 64px
+    }
+
+    .hero p {
+      font-size: 1.08rem
+    }
+
+    .cta {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin: 30px 0 26px
+    }
+
+    .pills {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap
+    }
+
+    .pills span {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .03);
+      border-radius: 99px;
+      padding: 6px 14px;
+      font-size: .88rem;
+      color: var(--dim)
+    }
+
+    .strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      padding: 6px 0 26px
+    }
+
+    .strip div {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 24px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .01))
+    }
+
+    .strip b {
+      display: block;
+      font: 700 1.8rem "Space Grotesk", Inter, sans-serif
+    }
+
+    .strip span {
+      color: var(--dim);
+      font-size: .95rem
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .05), rgba(255, 255, 255, .015));
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 36px;
+      transition: .25s
+    }
+
+    .card:hover {
+      border-color: rgba(139, 92, 246, .5);
+      transform: translateY(-4px)
+    }
+
+    section.s {
+      padding: 80px 0
+    }
+
+    .head {
+      max-width: 720px;
+      margin-bottom: 38px
+    }
+
+    .head p {
+      color: var(--dim)
+    }
+
+    .g3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px
+    }
+
+    .g4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px
+    }
+
+    .plans {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px
+    }
+
+    .num {
+      font: 700 2.6rem "Space Grotesk", Inter, sans-serif
+    }
+
+    .card p {
+      color: var(--dim);
+      margin: 0
+    }
+
+    .chip {
+      color: var(--dim);
+      font-size: .9rem;
+      margin-bottom: 8px
+    }
+
+    .plan {
+      position: relative;
+      overflow: hidden
+    }
+
+    .plan.p {
+      border-color: rgba(99, 102, 241, .7);
+      box-shadow: 0 0 90px -35px #6366f1
+    }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0 28px;
+      color: var(--dim)
+    }
+
+    .plan li {
+      margin: 8px 0;
+      padding-left: 26px;
+      position: relative
+    }
+
+    .plan li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--c)
+    }
+
+    .note {
+      color: var(--dim);
+      font-size: .92rem;
+      margin-top: 18px
+    }
+
+    #msg {
+      min-height: 1.6em;
+      margin-top: 14px;
+      color: var(--dim)
+    }
+
+    #msg.e {
+      color: #ff8a76
+    }
+
+    #done {
+      display: none;
+      border: 1px solid #28c98a;
+      border-radius: 22px;
+      padding: 30px;
+      margin-top: 24px;
+      background: rgba(40, 201, 138, .06)
+    }
+
+    #done h3 {
+      color: #4be3a6
+    }
+
+    .ico {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--g);
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      font-size: 22px
+    }
+
+    details {
+      border-bottom: 1px solid var(--line);
+      padding: 20px 0
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.1rem;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px
+    }
+
+    summary::after {
+      content: "+";
+      color: var(--c);
+      font-size: 1.4rem;
+      line-height: 1
+    }
+
+    details[open] summary::after {
+      content: "–"
+    }
+
+    details p {
+      color: var(--dim);
+      margin: .8em 0 0;
+      max-width: 880px
+    }
+
+    summary::-webkit-details-marker {
+      display: none
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 15px 16px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .04);
+      color: var(--text);
+      font: inherit;
+      margin: 0 0 14px
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 2px solid var(--i);
+      border-color: transparent
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical
+    }
+
+    .enq {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 70px;
+      align-items: start
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px
+    }
+
+    .rv {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px
+    }
+
+    .rv .card b {
+      display: block;
+      margin-top: 16px
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      margin-top: 40px;
+      padding: 38px 0 calc(38px + env(safe-area-inset-bottom));
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: var(--dim)
+    }
+
+    footer .logo {
+      width: 150px;
+      height: 30px
+    }
+
+    @media(max-width:1000px) {
+      .row {
+        grid-template-columns: 1fr;
+        gap: 34px;
+        padding: 52px 0
+      }
+
+      .row.rev .media {
+        order: 0
+      }
+
+      .g3,
+      .g4,
+      .plans,
+      .rv,
+      .enq {
+        grid-template-columns: 1fr
+      }
+
+      .g4 {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .strip {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .enq {
+        gap: 34px
+      }
+
+      .w {
+        padding: 0 20px
+      }
+
+      .burger {
+        display: block
+      }
+
+      .bar {
+        height: 66px
+      }
+
+      .logo {
+        width: 150px;
+        height: 29px
+      }
+
+      .links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #07080f;
+        border-bottom: 1px solid var(--line);
+        padding: 8px 20px 22px;
+        display: none
+      }
+
+      header.top.open {
+        background: #07080f
+      }
+
+      .open .links {
+        display: flex
+      }
+
+      .links a {
+        padding: 16px 4px;
+        border-bottom: 1px solid var(--line);
+        font-size: 1.05rem
+      }
+
+      .links .btn {
+        margin-top: 18px;
+        border: 0
+      }
+
+      .card {
+        padding: 28px
+      }
+
+      section.s {
+        padding: 56px 0
+      }
+
+      .two {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media(max-width:520px) {
+      .g4 {
+        grid-template-columns: 1fr
+      }
+
+      .cta .btn {
+        width: 100%
+      }
+    }
+
+    .live {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px 26px;
+      flex-wrap: wrap;
+      color: var(--dim);
+      font-size: .95rem;
+      padding: 4px 0 24px
+    }
+
+    .live[hidden] {
+      display: none
+    }
+
+    .live b {
+      color: var(--text);
+      font: 700 1.2rem "Space Grotesk", Inter, sans-serif
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #28c98a;
+      animation: pl 1.8s infinite
+    }
+
+    @keyframes pl {
+      0% {
+        box-shadow: 0 0 0 0 rgba(40, 201, 138, .6)
+      }
+
+      70%,
+      100% {
+        box-shadow: 0 0 0 10px rgba(40, 201, 138, 0)
+      }
+    }
+
+    .coffee {
+      background: linear-gradient(135deg, #ffe27a, #ffb833);
+      color: #1b1200 !important;
+      box-shadow: 0 10px 28px -12px #ffb833, inset 0 1px 0 rgba(255, 255, 255, .5)
+    }
+
+    dialog#coffee {
+      background: #0d0f1f;
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 34px 30px 28px;
+      max-width: 400px;
+      width: calc(100% - 32px);
+      text-align: center;
+      box-shadow: 0 40px 100px -30px rgba(99, 102, 241, .6)
+    }
+
+    dialog#coffee::backdrop {
+      background: rgba(3, 4, 10, .72);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px)
+    }
+
+    dialog#coffee h3 {
+      font-size: 1.6rem;
+      margin-bottom: .3em
+    }
+
+    .qr {
+      background: #fff;
+      border-radius: 20px;
+      padding: 14px;
+      width: min(260px, 100%);
+      margin: 0 auto 14px
+    }
+
+    .qr img {
+      width: 100%;
+      height: auto;
+      display: block
+    }
+
+    .x {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .05);
+      color: var(--text);
+      font-size: 1.4rem;
+      line-height: 1;
+      cursor: pointer
+    }
+
+    .mrow {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px
+    }
+
+    footer {
+      justify-content: space-between;
+      font-size: .82rem
+    }
+
+    footer .btn {
+      padding: 8px 16px;
+      font-size: .8rem
+    }
+
+    footer a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--line)
+    }
+
+    footer a:hover {
+      color: var(--c)
+    }
+
+    @media(max-width:640px) {
+      footer {
+        flex-direction: column;
+        text-align: center
+      }
+
+      footer .btn {
+        width: 100%
+      }
+    }
+
+    .row.compact {
+      padding: 44px 0
+    }
+
+    .media.wide img {
+      aspect-ratio: 16/10
+    }
+
+    .t h3.big {
+      font-size: clamp(1.5rem, 2.6vw, 2.2rem)
+    }
+
+    @media(max-width:1000px) {
+      .row.compact {
+        padding: 30px 0
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="lg" viewBox="0 0 250 48">
+      <defs>
+        <linearGradient id="lgr" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#8b5cf6" />
+          <stop offset=".5" stop-color="#6366f1" />
+          <stop offset="1" stop-color="#22d3ee" />
+        </linearGradient>
+      </defs><text x="0" y="35" font-family="Space Grotesk,Inter,system-ui,sans-serif" font-size="30" font-weight="700"
+        letter-spacing="-.6">
+        <tspan fill="#fff">Sanrovix </tspan>
+        <tspan fill="url(#lgr)">Tech</tspan>
+      </text>
+    </symbol>
+  </svg>
+
+  <header class="top" id="top">
+    <div class="w bar">
+      <a href="#" aria-label="Sanrovix Tech home"><svg class="logo" role="img" aria-label="Sanrovix Tech">
+          <use href="#lg" />
+        </svg></a>
+      <nav class="links" id="nav" aria-label="Main"><a href="#features">Features</a><a href="#how">How it works</a><a
+          href="#faq">FAQ</a><a href="#support">Support</a><a class="btn sm" href="#get">Download free</a></nav>
+      <button class="burger" id="bg" aria-label="Open menu" aria-expanded="false"
+        aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="w">
+    <div class="row hero">
+      <div class="t">
+        <div class="tag">Folder Locker for Mac</div>
+        <h1>Keep private files <span class="gt">private</span> on your Mac.</h1>
+        <p>A password-protected vault that hides even 200 GB of video in about a second, or locks sensitive files with
+          AES-256 encryption. Nothing leaves your Mac. Free to download.</p>
+        <div class="cta"><a class="btn" href="#get">Download free</a><a class="btn o" href="#how">See how it works</a>
+        </div>
+        <div class="pills"><span>Free to download</span><span>No account needed</span><span>Works offline</span></div>
+      </div>
+      <div class="media"><img src="assets/hero.svg" alt="Folder Lock app window listing hidden and encrypted items"
+          width="1000" height="750" fetchpriority="high"></div>
+    </div>
+
+    <div class="strip">
+      <div><b class="gt">~1 sec</b><span>to hide huge folders</span></div>
+      <div><b class="gt">AES-256</b><span>strong encryption</span></div>
+      <div><b class="gt">Offline</b><span>nothing is uploaded</span></div>
+      <div><b class="gt">Free</b><span>no account needed</span></div>
+    </div>
+    <div class="live" id="live" hidden><span class="dot"></span><span>Live</span><span><b id="sv">–</b>
+        visitors</span><span><b id="sd">–</b> downloads</span></div>
+
+    <main id="features">
+      <section class="row">
+        <div class="media"><img src="assets/hide.svg" alt="A large folder being hidden instantly" width="1000"
+            height="750" loading="lazy"></div>
+        <div class="t">
+          <div class="tag">Quick hide</div>
+          <h2>Instant, whatever the size.</h2>
+          <p>Quick hide moves files out of sight without copying, so 4K video libraries vanish in a moment and come back
+            just as fast. No extra disk space needed.</p>
+          <ul>
+            <li>Hidden from Finder, behind your app password</li>
+            <li>Restore any item with one click</li>
+            <li>Not encrypted, so use Encrypt for sensitive files</li>
+          </ul>
+        </div>
+      </section>
+      <section class="row rev">
+        <div class="media"><img src="assets/encrypt.svg" alt="A document protected by a padlock with AES-256 encryption"
+            width="1000" height="750" loading="lazy"></div>
+        <div class="t">
+          <div class="tag">Encrypt</div>
+          <h2>Unreadable without your password.</h2>
+          <p>Documents, IDs and financial files are scrambled with AES-256 encryption. Even someone who copies the vault
+            sees nothing but noise.</p>
+          <ul>
+            <li>Strong key derivation (scrypt)</li>
+            <li>Works with files and whole folders</li>
+            <li>No password recovery, by design</li>
+          </ul>
+        </div>
+      </section>
+      <section class="row">
+        <div class="media"><img src="assets/erase.svg"
+            alt="A ring showing ten allowed password attempts before self-erase" width="1000" height="750"
+            loading="lazy"></div>
+        <div class="t">
+          <div class="tag">Self-erase</div>
+          <h2>Guessing gets nobody anywhere.</h2>
+          <p>Choose how many wrong passwords are allowed. After that, the vault erases itself. Change your password from
+            inside the app any time.</p>
+          <ul>
+            <li>Fresh start when the app is reinstalled</li>
+            <li>Starts with password 123, changed on first use</li>
+            <li>No accounts, no cloud</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <section class="s" id="how">
+      <div class="head">
+        <div class="tag">How it works</div>
+        <h2>From download to hidden in minutes.</h2>
+      </div>
+      <div class="g3">
+        <div class="card">
+          <div class="num gt">1</div>
+          <h3>Choose your Mac</h3>
+          <p>Pick Apple Silicon or Intel. Not sure? The guide below shows how to check.</p>
+        </div>
+        <div class="card">
+          <div class="num gt">2</div>
+          <h3>Download</h3>
+          <p>Click download. No sign-up, no payment, no waiting.</p>
+        </div>
+        <div class="card">
+          <div class="num gt">3</div>
+          <h3>Install and hide</h3>
+          <p>Drag to Applications, sign in with 123, set your own password and add files.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="s" id="get">
+      <div class="head">
+        <div class="tag">Free download</div>
+        <h2>Choose your <span class="gt">Mac</span>.</h2>
+        <p>Open the Apple menu → <b>About This Mac</b>. A chip named <b>Apple M…</b> means Apple Silicon. A processor
+          named <b>Intel</b> means Intel.</p>
+      </div>
+      <div class="plans">
+        <div class="card plan p">
+          <div class="chip">MacBook, iMac, Mac mini with M1, M2, M3, M4 or M5</div>
+          <h3>Apple Silicon</h3>
+          <ul>
+            <li>Built for M-series chips</li>
+            <li>Quick hide and AES-256 Encrypt</li>
+            <li>Free, no account needed</li>
+          </ul><button class="btn" data-dl="silicon">Download free</button>
+        </div>
+        <div class="card plan">
+          <div class="chip">Older Macs with an Intel processor</div>
+          <h3>Intel</h3>
+          <ul>
+            <li>Built for Intel Macs</li>
+            <li>Quick hide and AES-256 Encrypt</li>
+            <li>Free, no account needed</li>
+          </ul><button class="btn" data-dl="intel">Download free</button>
+        </div>
+      </div>
+      <div id="msg" role="status"></div>
+      <div class="note" id="alt" hidden>Download did not start? <a id="altlink" target="_blank" rel="noopener"
+          href="#">Open in Google Drive</a> and press Download. If Google says the file is too large to scan for
+        viruses, choose <b>Download anyway</b>.</div>
+      <div class="note" style="margin-top:20px">Folder Locker is free. If it helps you, you can <a href="#"
+          data-coffee>buy me a coffee ☕</a>. Completely optional.</div>
+    </section>
+
+    <section class="s" style="padding-bottom:0">
+      <div class="head">
+        <div class="tag">Download with confidence</div>
+        <h2>Built to earn your trust.</h2>
+      </div>
+      <div class="row compact">
+        <div class="media wide"><img src="assets/trust-free.svg" alt="A download tile marked Free with no sign-up"
+            width="1000" height="625" loading="lazy"></div>
+        <div class="t">
+          <div class="tag">Free</div>
+          <h3 class="big">Free to use, no strings.</h3>
+          <p>Download Folder Locker without paying, signing up or sharing your email. If it helps you, a coffee is
+            optional.</p>
+          <ul>
+            <li>No payment, no sign-up</li>
+            <li>Ready to use right after install</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row compact rev">
+        <div class="media wide"><img src="assets/trust-fast.svg" alt="A lightning bolt showing an instant download"
+            width="1000" height="625" loading="lazy"></div>
+        <div class="t">
+          <div class="tag">Instant</div>
+          <h3 class="big">Pick your Mac, download, done.</h3>
+          <p>Choose Apple Silicon or Intel and the installer starts right away. Install by dragging it into
+            Applications.</p>
+          <ul>
+            <li>Apple Silicon and Intel versions</li>
+            <li>Drag to Applications to install</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row compact">
+        <div class="media wide"><img src="assets/trust-private.svg"
+            alt="A Mac laptop with a padlock and no cloud upload" width="1000" height="625" loading="lazy"></div>
+        <div class="t">
+          <div class="tag">Private</div>
+          <h3 class="big">Everything stays on your Mac.</h3>
+          <p>Folder Locker works offline. Your files and password are never uploaded anywhere.</p>
+          <ul>
+            <li>No cloud, no account</li>
+            <li>Your password is never sent anywhere</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row compact rev">
+        <div class="media wide"><img src="assets/trust-support.svg" alt="Chat bubbles showing a support reply"
+            width="1000" height="625" loading="lazy"></div>
+        <div class="t">
+          <div class="tag">Support</div>
+          <h3 class="big">Real help when you need it.</h3>
+          <p>Stuck on install or have a question? <a href="#support">Send an enquiry</a> and you will get a reply by
+            email.</p>
+          <ul>
+            <li>Help with installing on any Mac</li>
+            <li>Replies by email</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="s" id="reviews" hidden>
+      <div class="head">
+        <div class="tag">Customers</div>
+        <h2>What people say.</h2>
+      </div>
+      <div class="rv" id="rvlist"></div>
+    </section>
+
+    <section class="s" id="faq">
+      <div class="head">
+        <div class="tag">FAQ</div>
+        <h2>Questions, answered.</h2>
+      </div>
+      <details>
+        <summary>Is Folder Locker really free?</summary>
+        <p>Yes. It is free to download and use, with no account. If it helps you, you can optionally buy me a coffee
+          with the button at the bottom of the page.</p>
+      </details>
+      <details>
+        <summary>Which version do I need, Apple Silicon or Intel?</summary>
+        <p>Open the Apple menu → About This Mac. If it shows a Chip named Apple M1, M2, M3, M4 or M5, choose Apple
+          Silicon. If it shows an Intel processor, choose Intel.</p>
+      </details>
+      <details>
+        <summary>Why does macOS say it can't verify the developer?</summary>
+        <p>The app is not signed with a paid Apple certificate. Open System Settings → Privacy &amp; Security, scroll
+          down and click <b>Open Anyway</b>. You only do this once.</p>
+      </details>
+      <details>
+        <summary>What is the first password?</summary>
+        <p>The first password is <b>123</b>. Open the app and use <b>Change password</b> straight away.</p>
+      </details>
+      <details>
+        <summary>Is Quick hide encrypted?</summary>
+        <p>No. Quick hide moves files out of sight instantly, whatever their size, behind an app password. Someone with
+          technical knowledge could still find them. Use <b>Encrypt</b> (AES-256) for sensitive files.</p>
+      </details>
+      <details>
+        <summary>What if I forget my password?</summary>
+        <p>Encrypted files cannot be recovered. The app can erase everything and start fresh, which permanently deletes
+          locked files.</p>
+      </details>
+      <details>
+        <summary>What happens if I delete or update the app?</summary>
+        <p>Reinstalling starts a fresh vault and removes the old one. Restore your files before deleting or updating the
+          app.</p>
+      </details>
+      <details>
+        <summary>The installer won't work on my Mac. What now?</summary>
+        <p>Send an enquiry below with your Mac model and macOS version, and we'll help you get it running.</p>
+      </details>
+    </section>
+
+    <section class="s" id="support">
+      <div class="enq">
+        <div class="head" style="margin:0">
+          <div class="tag">Support</div>
+          <h2>Have a question? Ask us.</h2>
+          <p>Questions before buying, help with installing, or a problem with your download. Send an enquiry and we'll
+            reply by email.</p>
+        </div>
+        <form class="card" id="enq" action="https://formspree.io/f/xzznwell" method="POST">
+          <input type="hidden" name="_subject" value="Folder Locker website enquiry"><input type="text" name="_gotcha"
+            style="display:none" tabindex="-1" autocomplete="off">
+          <div class="two"><input name="firstName" placeholder="First name*" required aria-label="First name"><input
+              name="lastName" placeholder="Last name*" required aria-label="Last name"></div>
+          <input name="email" type="email" placeholder="Email address*" required aria-label="Email address">
+          <textarea name="message" placeholder="How can we help? (question, install issue, feedback)*" required
+            aria-label="Message"></textarea>
+          <button class="btn" type="submit">Send enquiry</button>
+          <div class="note" id="fm" role="status"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer><span>© 2026 All Rights Reserved &nbsp;·&nbsp; Created by <a href="https://sanjaysudhakaran.in"
+          rel="noopener">Sanjay S</a></span><button class="btn coffee" data-coffee>☕ Buy me a coffee</button></footer>
+  </div>
+
+  <dialog id="coffee" aria-labelledby="ct"><button class="x" data-close aria-label="Close">×</button>
+    <h3 id="ct">Buy me a coffee ☕</h3>
+    <p class="note" style="margin:0 0 18px">Folder Lock is free. If it helped you, a small tip keeps me building. Any
+      amount is appreciated.</p>
+    <div class="qr"><img src="assets/upi-qr.png" alt="UPI QR code to support Sanrovix Tech" width="240" height="240">
+    </div>
+    <p class="note">Scan with GPay, PhonePe, Paytm or any UPI app.</p>
+    <div class="mrow"><a class="btn" id="upi" href="#" hidden>Open UPI app</a><button class="btn o" id="cp"
+        type="button">Copy UPI ID</button></div>
+    <div class="note" id="cpm" role="status"></div>
+  </dialog>
+
+  <script>
+    // ===== Settings =====
+    const CONFIG = {
+      // Paste your two direct download links here (see README: GitHub Releases).
+      // Google Drive files (must be shared as "Anyone with the link"). Direct-download links, with the normal Drive page as a backup.
+      downloads: {
+        silicon: 'https://drive.google.com/uc?export=download&id=1fKINMv7JnPJrG4FcVa1m7cwUC4kLGe13',
+        intel: 'https://drive.google.com/uc?export=download&id=1GshPz5JeY-et2DTQvi6NC6mD5i6RtlNO'
+      },
+      view: {
+        silicon: 'https://drive.google.com/file/d/1fKINMv7JnPJrG4FcVa1m7cwUC4kLGe13/view?usp=sharing',
+        intel: 'https://drive.google.com/file/d/1GshPz5JeY-et2DTQvi6NC6mD5i6RtlNO/view?usp=sharing'
+      },
+      // Counters start from these numbers. Keep at 0 unless you have REAL earlier visitors/downloads to add.
+      base: {visitors: 0, downloads: 0},
+      upi: '8825894258@pthdfc', upiName: 'S SANJAY'
+    };
+    const $ = s => document.querySelector(s);
+    // ===== Menu =====
+    const tp = $('#top'), bg = $('#bg'); const menu = o => {tp.classList.toggle('open', o); bg.setAttribute('aria-expanded', o); bg.setAttribute('aria-label', o ? 'Close menu' : 'Open menu')};
+    bg.onclick = () => menu(!tp.classList.contains('open')); document.querySelectorAll('#nav a').forEach(a => a.onclick = () => menu(false));
+    addEventListener('keydown', e => {if (e.key === 'Escape') menu(false)});
+    // ===== Live stats (visitors + downloads) =====
+    const nf = n => Number(n).toLocaleString('en-IN');
+    const track = (event, product) => fetch('/api/stats', {method: 'POST', body: JSON.stringify({event, product}), keepalive: true}).then(r => r.json()).catch(() => null);
+    async function showStats(d) {
+      d = d || await fetch('/api/stats', {cache: 'no-store'}).then(r => r.json()).catch(() => null);
+      if (!d || d.visitors == null) return; $('#sv').textContent = nf(d.visitors + CONFIG.base.visitors); $('#sd').textContent = nf(d.downloads + CONFIG.base.downloads); $('#live').hidden = false
+    }
+    (async () => {
+      let last = 0; try {last = +localStorage.getItem('fl_v') || 0} catch { }
+      if (Date.now() - last > 864e5) {try {localStorage.setItem('fl_v', Date.now())} catch { } showStats(await track('visit'))} else showStats();
+      setInterval(() => showStats(), 30000)
+    })();
+    // ===== Downloads =====
+    const msg = (t, e) => {$('#msg').textContent = t; $('#msg').className = e ? 'e' : ''};
+    document.querySelectorAll('[data-dl]').forEach(b => b.onclick = async () => {
+      const p = b.dataset.dl, u = CONFIG.downloads[p];
+      if (!u || u.includes('YOUR-USERNAME')) return msg('The download link has not been set up yet.', 1);
+      $('#altlink').href = CONFIG.view[p]; $('#alt').hidden = false; track('download', p).then(showStats); msg('Your download is starting… If Folder Lock helps you, you can buy me a coffee ☕ (optional).'); location.href = u
+    });
+    // ===== Buy me a coffee popup =====
+    const dlg = $('#coffee'); const upiUrl = 'upi://pay?pa=' + CONFIG.upi + '&pn=' + encodeURIComponent(CONFIG.upiName) + '&cu=INR';
+    if (matchMedia('(pointer:coarse)').matches) {$('#upi').href = upiUrl; $('#upi').hidden = false}
+    document.querySelectorAll('[data-coffee]').forEach(b => b.onclick = e => {e.preventDefault(); $('#cpm').textContent = ''; dlg.showModal()});
+    dlg.addEventListener('click', e => {if (e.target === dlg || e.target.closest('[data-close]')) dlg.close()});
+    $('#cp').onclick = async () => {try {await navigator.clipboard.writeText(CONFIG.upi); $('#cpm').textContent = 'UPI ID copied. Paste it in your UPI app.'} catch {$('#cpm').textContent = 'UPI ID: ' + CONFIG.upi} };
+    // ===== Enquiry form (Formspree) =====
+    $('#enq').addEventListener('submit', async e => {
+      e.preventDefault(); const f = e.target, st = $('#fm'), btn = f.querySelector('button[type="submit"]'); btn.disabled = true; st.style.color = ''; st.textContent = 'Sending…';
+      try {
+        const r = await fetch(f.action, {method: 'POST', body: new FormData(f), headers: {Accept: 'application/json'}});
+        if (r.ok) {st.textContent = 'Thank you! Your enquiry has been sent. We will reply by email.'; st.style.color = '#4be3a6'; f.reset()}
+        else {const d = await r.json().catch(() => ({})); st.textContent = d.errors ? d.errors.map(x => x.message).join(', ') : 'Oops! There was a problem sending your enquiry.'; st.style.color = '#ff8a76'}
+      }
+      catch {st.textContent = 'Oops! There was a problem sending your enquiry.'; st.style.color = '#ff8a76'} finally {btn.disabled = false}
+    });
+    // Real customer reviews: add only genuine ones here, e.g. {name:'Name, City',text:'What they said'}. The section appears automatically.
+    const REVIEWS = [];
+    if (REVIEWS.length) {
+      $('#reviews').hidden = false; $('#rvlist').innerHTML = REVIEWS.map(r => '<div class="card"><p></p><b></b></div>').join('');
+      document.querySelectorAll('#rvlist .card').forEach((c, i) => {c.querySelector('p').textContent = '“' + REVIEWS[i].text + '”'; c.querySelector('b').textContent = REVIEWS[i].name})
+    }
+  </script>
+</body>
+
+</html>

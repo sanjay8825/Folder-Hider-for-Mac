@@ -1,0 +1,15 @@
+# Folder Lock for Mac by Sanrovix Tech
+> Folder Lock is a free macOS app that hides and protects private files and folders behind a password.
+
+## Facts
+- Free to download and use. No account needed. Optional tips via "Buy me a coffee" (UPI).
+- Two modes: Quick hide (instant, any file size, not encrypted) and Encrypt (AES-256-GCM, key derived with scrypt).
+- Versions: Apple Silicon (M1, M2, M3, M4, M5) and Intel Macs. Works offline; nothing is uploaded.
+- Default first password is 123; change it after opening the app.
+- Optional self-erase after a chosen number of wrong passwords (default 10).
+- Not signed with a paid Apple certificate: macOS asks the user to click "Open Anyway" once in System Settings > Privacy & Security.
+- No password recovery for encrypted files.
+- Questions: use the enquiry form on the website.
+
+## Download
+https://shop.sanjaysudhakaran.in/#get
